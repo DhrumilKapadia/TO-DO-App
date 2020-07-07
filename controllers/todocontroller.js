@@ -2,7 +2,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 //connect to the database
-mongoose.connect('mongodb://test:test@cluster0-shard-00-00-51dvf.mongodb.net:27017,cluster0-shard-00-01-51dvf.mongodb.net:27017,cluster0-shard-00-02-51dvf.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('add your mongoDB url', { useNewUrlParser: true, useUnifiedTopology: true });
 
 //create a schema
 var todoSchema = new mongoose.Schema({
